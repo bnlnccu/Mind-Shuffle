@@ -1,0 +1,15 @@
+===== Answer Key for SortingBucket.cs =====
+
+===== Fill-in-the-blank B (Sort Logic) =====
+
+        if (currentRule == SortingRule.ByCategory)
+            correct = (currentCategory == acceptCategory);
+        else if (currentRule == SortingRule.ByColor)
+            correct = (currentColor == acceptColor);
+
+===== Fill-in-the-blank C (Audio Feedback) =====
+
+        if (correct)
+            audioPlayer.PlayOneShot(correctSound);
+        else
+            audioPlayer.PlayOneShot(wrongSound);
