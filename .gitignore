@@ -32,3 +32,9 @@ Thumbs.db
 
 # Crashlytics
 crashlytics-build.properties
+
+# Teacher-only files (not for students)
+Design.md
+Homework.md
+Assets/Scripts/Sorting/AnswerKey~/
+docs/
