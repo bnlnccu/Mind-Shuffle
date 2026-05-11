@@ -38,3 +38,10 @@ Design.md
 Homework.md
 Assets/Scripts/Sorting/AnswerKey~/
 docs/
+
+# Generated data (CSV exports, screenshots)
+MindShuffle_*.csv
+Assets/Screenshots/
+
+# Claude Code local config
+.claude/

@@ -139,18 +139,17 @@ public class SortingBucket : MonoBehaviour
         SortingRule currentRule = ruleBroadcaster.CurrentRule;
         bool correct = false;
 
-        // ===== TODO (Fill-in-the-blank B): Sort logic =====
-        // Hint:
-        //   - If currentRule is ByCategory, compare currentCategory with acceptCategory
-        //   - If currentRule is ByColor, compare currentColor with acceptColor
-        //   - Store result in the 'correct' variable
+        // ===== TODO (B): 判斷玩家分類是否正確，結果存進 correct =====
+        // 如果目前規則是 ByCategory，比較 currentCategory 和 acceptCategory
+        // 如果目前規則是 ByColor，比較 currentColor 和 acceptColor
+        // 可用的變數: currentRule, currentCategory, currentColor, acceptCategory, acceptColor
 
 
+        // ===== TODO (C): 根據對錯播放音效 =====
+        // 答對播放 correctSound，答錯播放 wrongSound
+        // 使用 audioPlayer.PlayOneShot( ) 來播放
 
-        // ===== TODO (Fill-in-the-blank C): Play audio feedback =====
-        // Hint:
-        //   - If correct is true, play: audioPlayer.PlayOneShot(correctSound)
-        //   - If correct is false, play: audioPlayer.PlayOneShot(wrongSound)
+
 
 
 
