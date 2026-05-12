@@ -42,6 +42,7 @@ docs/
 # Generated data (CSV exports, screenshots)
 MindShuffle_*.csv
 Assets/Screenshots/
+Assets/Screenshots.meta
 
 # Claude Code local config
 .claude/
