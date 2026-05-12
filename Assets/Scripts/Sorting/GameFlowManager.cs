@@ -96,6 +96,7 @@ public class GameFlowManager : MonoBehaviour
     private bool isProcessing;
     private GameObject currentStimulus;
     private string currentStimulusName;
+    private ItemColor currentStimulusColor;
     private bool lastTrialCorrect;
     private Coroutine trialTimerCoroutine;
     private List<float> maintainRTs = new List<float>();
@@ -116,7 +117,7 @@ public class GameFlowManager : MonoBehaviour
         Application.logMessageReceived += OnLogMessageReceived;
 
         // CSV header with @DATA prefix for Console filtering
-        Debug.Log("@DATA,Trial,Rule,IsSwitch,Stimulus,RT(ms),Correct");
+        Debug.Log("@DATA,Trial,Rule,IsSwitch,Stimulus,Color,RT(ms),Correct");
 
         if (feedbackIcon != null) feedbackIcon.SetActive(false);
         if (resultPanel != null) resultPanel.SetActive(false);
@@ -176,6 +177,7 @@ public class GameFlowManager : MonoBehaviour
         if (currentStimulus != null)
         {
             ItemColor randomColor = (Random.Range(0, 2) == 0) ? ItemColor.Red : ItemColor.Blue;
+            currentStimulusColor = randomColor;
 
             // Set ItemProperty color
             ItemProperty prop = currentStimulus.GetComponent<ItemProperty>();
@@ -276,9 +278,9 @@ public class GameFlowManager : MonoBehaviour
 
         // 4. CSV output
         // ===== TODO (D): 用 Debug.Log 印出這回合的資料 =====
-        // 格式："@DATA," + 回合數 + "," + 規則 + "," + 是否切換 + "," + 刺激物名稱 + "," + 反應時間 + "," + 是否正確
+        // 格式："@DATA," + 回合數 + "," + 規則 + "," + 是否切換 + "," + 刺激物名稱 + "," + 顏色 + "," + 反應時間 + "," + 是否正確
         // 可用的變數: trialCounter.CurrentTrial, ruleBroadcaster.CurrentRule,
-        //            ruleBroadcaster.DidSwitchThisTrial, currentStimulusName, rt, lastTrialCorrect
+        //            ruleBroadcaster.DidSwitchThisTrial, currentStimulusName, currentStimulusColor, rt, lastTrialCorrect
 
 
 
@@ -359,7 +361,7 @@ public class GameFlowManager : MonoBehaviour
         collectedDataLines.Clear();
 
         // Re-print CSV header for new session
-        Debug.Log("@DATA,Trial,Rule,IsSwitch,Stimulus,RT(ms),Correct");
+        Debug.Log("@DATA,Trial,Rule,IsSwitch,Stimulus,Color,RT(ms),Correct");
 
         SetButtonsInteractable(false);
         countdownTimer.StartCountdown(OnCountdownFinished);
