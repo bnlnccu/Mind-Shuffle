@@ -11,5 +11,10 @@ public class ItemProperty : MonoBehaviour
     [SerializeField] private ItemColor color;
 
     public ItemCategory Category => category;
-    public ItemColor Color => color;
+
+    public ItemColor Color
+    {
+        get => color;
+        set => color = value;
+    }
 }

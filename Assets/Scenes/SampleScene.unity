@@ -1755,12 +1755,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stimulusPrefabs:
-  - {fileID: 3052747968370783094, guid: b67a8d0ba6c691b4aa74cfe3fdc6ac4c, type: 3}
-  - {fileID: 8817630962952414702, guid: e3cd3d93a115e4c4d81ac0e43dc8a7c1, type: 3}
-  - {fileID: 3789240866325883948, guid: 50b8001d6d7e90843b59cf6a4ca5b633, type: 3}
-  - {fileID: 3211578645734179175, guid: 2232d2166a7845140a371495c8ea8b73, type: 3}
-  - {fileID: 5751111755317886504, guid: 72ffb52461e2a3e45a5ff4ba68abc2e0, type: 3}
-  - {fileID: 3790110954926873634, guid: 4f3bad1dbd40fb84dbcbca8b7c3838b8, type: 3}
+  - {fileID: 2089825843488653741, guid: 81d73ba7643b2b74880bc8c3eb569fdb, type: 3}
+  - {fileID: 706111804531666124, guid: 4c7e5f5feff7e104190fb55ddce5d743, type: 3}
+  - {fileID: 7819044578323893692, guid: 7972837158a10d74289ff5273bfb7fdf, type: 3}
   spawnPoint: {fileID: 13375047}
   ruleBroadcaster: {fileID: 1258968130}
   trialCounter: {fileID: 1258968133}

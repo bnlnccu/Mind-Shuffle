@@ -172,6 +172,24 @@ public class GameFlowManager : MonoBehaviour
 
 
 
+        // Randomly assign color (Red or Blue) and apply tint
+        if (currentStimulus != null)
+        {
+            ItemColor randomColor = (Random.Range(0, 2) == 0) ? ItemColor.Red : ItemColor.Blue;
+
+            // Set ItemProperty color
+            ItemProperty prop = currentStimulus.GetComponent<ItemProperty>();
+            if (prop != null)
+                prop.Color = randomColor;
+
+            // Apply visual tint to Image
+            var image = currentStimulus.GetComponent<UnityEngine.UI.Image>();
+            if (image != null)
+                image.color = (randomColor == ItemColor.Red)
+                    ? new Color(1f, 0.3f, 0.3f, 1f)
+                    : new Color(0.3f, 0.5f, 1f, 1f);
+        }
+
         // Cache stimulus name BEFORE it could be destroyed
         currentStimulusName = currentStimulus != null
             ? currentStimulus.name.Replace("(Clone)", "").Trim()
