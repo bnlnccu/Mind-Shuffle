@@ -1757,7 +1757,10 @@ MonoBehaviour:
   stimulusPrefabs:
   - {fileID: 2089825843488653741, guid: 81d73ba7643b2b74880bc8c3eb569fdb, type: 3}
   - {fileID: 706111804531666124, guid: 4c7e5f5feff7e104190fb55ddce5d743, type: 3}
+  - {fileID: 2411022122817535167, guid: c491456ccabb08a40b6cee942b5116ca, type: 3}
   - {fileID: 7819044578323893692, guid: 7972837158a10d74289ff5273bfb7fdf, type: 3}
+  - {fileID: 8877552835525442387, guid: c2b2a9b36035e7e4987d8c3ae077b6f3, type: 3}
+  - {fileID: 2355520319325887136, guid: 43b6a0db45dfdf54c8bf5d966351464c, type: 3}
   spawnPoint: {fileID: 13375047}
   ruleBroadcaster: {fileID: 1258968130}
   trialCounter: {fileID: 1258968133}
