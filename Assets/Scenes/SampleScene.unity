@@ -334,8 +334,8 @@ MonoBehaviour:
   labelMode: 0
   bucketLabel: {fileID: 1691000973}
   ruleBroadcaster: {fileID: 1258968130}
-  correctSound: {fileID: 0}
-  wrongSound: {fileID: 0}
+  correctSound: {fileID: 8300000, guid: d3676db50d2fbd54887c1f7f9d9fc7a8, type: 3}
+  wrongSound: {fileID: 8300000, guid: 5fc1be190ca0d0e44aa21c80f717e274, type: 3}
   audioPlayer: {fileID: 248400939}
   onCorrectSort:
     m_PersistentCalls:
@@ -1857,8 +1857,8 @@ MonoBehaviour:
   labelMode: 0
   bucketLabel: {fileID: 1743712007}
   ruleBroadcaster: {fileID: 1258968130}
-  correctSound: {fileID: 0}
-  wrongSound: {fileID: 0}
+  correctSound: {fileID: 8300000, guid: d3676db50d2fbd54887c1f7f9d9fc7a8, type: 3}
+  wrongSound: {fileID: 8300000, guid: 5fc1be190ca0d0e44aa21c80f717e274, type: 3}
   audioPlayer: {fileID: 1452397966}
   onCorrectSort:
     m_PersistentCalls:
