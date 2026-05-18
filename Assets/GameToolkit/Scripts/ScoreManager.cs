@@ -37,8 +37,9 @@ public class ScoreManager : MonoBehaviour
     /// <param name="points">要增加的分數</param>
     public void AddScore(int points)
     {
-        CurrentScore += points;
-        UpdateUI();
+        // ===== TODO (S-1): 把 points 加到 CurrentScore，然後呼叫 UpdateUI() =====
+        // CurrentScore 是目前的分數，points 是要加的分數
+
     }
 
     /// <summary>
@@ -47,8 +48,9 @@ public class ScoreManager : MonoBehaviour
     /// <param name="points">要扣除的分數</param>
     public void SubtractScore(int points)
     {
-        CurrentScore = Mathf.Max(0, CurrentScore - points);
-        UpdateUI();
+        // ===== TODO (S-2): 從 CurrentScore 扣掉 points，分數不能低於 0，然後呼叫 UpdateUI() =====
+        // 提示：用 Mathf.Max(0, ...) 確保分數不會變成負數
+
     }
 
     /// <summary>重置分數為 0</summary>
