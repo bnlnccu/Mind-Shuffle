@@ -7,14 +7,9 @@ public class ItemProperty : MonoBehaviour
     [Tooltip("Category of this object (Fruit or Animal)")]
     [SerializeField] private ItemCategory category;
 
-    [Tooltip("Color of this object (Red or Blue)")]
-    [SerializeField] private ItemColor color;
-
     public ItemCategory Category => category;
 
-    public ItemColor Color
-    {
-        get => color;
-        set => color = value;
-    }
+    // Color is assigned at runtime by GameFlowManager (random red/blue)
+    // Not shown in Inspector to avoid confusion
+    public ItemColor Color { get; set; }
 }
